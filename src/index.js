@@ -1,3 +1,5 @@
+// import { schedule } from'./schedule'
+
 const { Wechaty } = require("wechaty") // Wechaty核心包
 const config = require("./config") // 配置文件
 
