@@ -12,7 +12,7 @@ module.exports = {
       机器人: "***@chatroom"
     },
     // 加入房间回复
-    roomJoinReply: `\n 你好，欢迎你的加入！ \n Hello, welcome to join！😊`
+    roomJoinReply: `\n 你好，欢迎你的加入！ \nHello, welcome to join！😊`
   },
   // 私人
   personal: {
