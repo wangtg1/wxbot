@@ -1,4 +1,5 @@
-// import { schedule } from'./schedule'
+// import { schedule } from'./schedule/'
+const schedule = require('./schedule')
 
 const { Wechaty } = require("wechaty") // Wechaty核心包
 const config = require("./config") // 配置文件
@@ -16,6 +17,20 @@ const bot = new Wechaty({
   },
   name: config.name,
 })
+
+
+bot
+  .on("scan", onScan) // 机器人需要扫描二维码时监听
+  .on("room-join", onRoomJoin) // 加入房间监听
+  .on('login', async user => {
+    console.log(`user: ${JSON.stringify(user)}`)
+  })
+  .on("message", onMessage(bot)) // 消息监听
+  .on("friendship", onFriendShip) // 好友添加监听
+  .start()
+  .then(() => {
+    schedule(bot)
+  })
 
 // user: {
 //   "_events":{},
@@ -37,13 +52,3 @@ const bot = new Wechaty({
 //     "weixin":""
 //   }
 // }
-
-bot
-  .on("scan", onScan) // 机器人需要扫描二维码时监听
-  .on("room-join", onRoomJoin) // 加入房间监听
-  .on('login', async user => {
-    console.log(`user: ${JSON.stringify(user)}`)
-  })
-  .on("message", onMessage(bot)) // 消息监听
-  .on("friendship", onFriendShip) // 好友添加监听
-  .start()
