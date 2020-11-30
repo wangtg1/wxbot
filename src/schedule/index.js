@@ -3,9 +3,10 @@ const { CronJob } = require('cron') // node-cron
 const config = require("../config") // 配置文件
 
 const schedule = (bot)=> {
-  const job = new CronJob('00 00 16 * * 1-5', () => {
+  console.log('now is time to run schedul');
+  const job = new CronJob('00 13 16 * * 1-5', () => {
     const d = new Date()
-    // console.log('At Ten Minutes:', d)
+    console.log('log about schedule', d)
     const rooms = config.room.roomList
     Object.keys(rooms).map(async (roomName) => {
       // 通过群聊id获取到该群聊实例

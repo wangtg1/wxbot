@@ -48,8 +48,8 @@ module.exports = bot => {
           let res = await requestRobot(sendText)
 
           // // 返回消息，并@来自人
-          // room.say(res, msg.from())
-          await msg.say(res, msg.from())
+          room.say(res, msg.from())
+          // await msg.say(res, msg.from())
           return
         }
 

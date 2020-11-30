@@ -1,6 +1,6 @@
 module.exports = {
   // token: "你申请的token", TODO
-  token: "puppet_donut_***",
+  token: "puppet_donut_****",
   // 机器人名字
   name: "天狗",
   // 房间/群聊
@@ -9,7 +9,7 @@ module.exports = {
     roomList: {
       // 群名(用于展示，最好是群名，可随意) : 群id(这个可不能随意)
       // TODO
-      机器人: "***@chatroom"
+      机器人: "****@chatroom"
     },
     // 加入房间回复
     roomJoinReply: `\n 你好，欢迎你的加入！ \nHello, welcome to join！😊`
