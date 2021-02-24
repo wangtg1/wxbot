@@ -2,7 +2,7 @@
 const { CronJob } = require('cron') // node-cron
 const config = require("../config") // 配置文件
 
-const schedule = (bot)=> {
+module.exports = (bot)=> {
   console.log('now is time to run schedul');
   const job = new CronJob('00 13 16 * * 1-5', () => {
     const d = new Date()
@@ -17,4 +17,3 @@ const schedule = (bot)=> {
   job.start();
 }
 // schedule('t')
-module.exports = schedule;

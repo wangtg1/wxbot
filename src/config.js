@@ -1,7 +1,7 @@
 module.exports = {
   // token: "你申请的token", TODO
   token: "puppet_donut_****",
-  // 机器人名字
+  // 自己机器人名字
   name: "天狗",
   // 房间/群聊
   room: {
