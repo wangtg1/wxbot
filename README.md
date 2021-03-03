@@ -25,12 +25,12 @@
 
 ```js
 |-- src/
-    |---- index.js	    # 入口文件
-|---- config.js		  	# 配置文件
-|---- onScan.js			# 机器人需要扫描二维码时监听回调
-|---- onRoomJoin.js 	# 进入房间监听回调
-|---- onMessage.js		# 消息监听回调
-|---- onFriendShip.js	# 好友添加监听回调
+    |---- index.js	        # 入口文件
+    |---- config.js		  	# 配置文件
+    |---- onScan.js			# 机器人需要扫描二维码时监听回调
+    |---- onRoomJoin.js 	# 进入房间监听回调
+    |---- onMessage.js		# 消息监听回调
+    |---- onFriendShip.js	# 好友添加监听回调
 |-- package.json
 ```
 
